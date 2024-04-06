@@ -1,6 +1,18 @@
 import React, { useEffect, useState } from "react";
 import CandidateCard from './Candidate';
 
+interface Candidate {
+  id: number;
+  full_name: string;
+  email: string;
+  experience: string;
+  hobbies: string;
+  about_me: string;
+  introduction: string;
+  score: string;
+  scores: { score_type: string; user_score: number; max_score: number }[];
+}
+
 interface AssignmentDetails {
   duration_in_seconds: number;
   ends_at: number;
